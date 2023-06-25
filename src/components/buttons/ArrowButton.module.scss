@@ -1,0 +1,36 @@
+@use "src/styles/variables.scss" as v;
+
+.button {
+  padding: 0 0 0 2px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+
+  & span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.dark {
+  background-color: v.$black;
+  color: v.$white;
+
+  &:hover {
+    background-color: v.$lightGray;
+    color: v.$black;
+  }
+}
+
+.light {
+  background-color: v.$white;
+  color: v.$black;
+
+  &:hover {
+    background-color: v.$lightGray;
+  }
+}

@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.scss";
 import { DM_Sans } from "next/font/google";
 
 const inter = DM_Sans({ weight: "400", subsets: ["latin"] });
