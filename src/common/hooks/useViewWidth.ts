@@ -1,18 +1,23 @@
+"use client";
 import { useState, useEffect } from "react";
-import { widthMD } from "@/common/utils";
+import { widthMD, widthLG } from "@/common/utils";
 
 export const useViewWidth = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= widthMD);
+  const [isMobile, setIsMobile] = useState<boolean>();
+  const [isTablet, setIsTablet] = useState<boolean>();
 
   useEffect(() => {
     const handleWindowResize = () => {
-      setIsMobile(window.innerWidth <= widthMD);
+      setIsMobile(window?.innerWidth <= widthMD);
+      setIsTablet(
+        window?.innerWidth > widthMD && window?.innerWidth <= widthLG
+      );
     };
-    window.addEventListener("resize", handleWindowResize);
+    window?.addEventListener("resize", handleWindowResize);
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, [window.innerWidth]);
+  }, []);
 
-  return { isMobile };
+  return { isMobile, isTablet };
 };

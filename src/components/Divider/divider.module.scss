@@ -1,0 +1,7 @@
+@use "src/styles/variables.scss" as v;
+.divider {
+  background: v.$white;
+  opacity: 0.25;
+  height: 1px;
+  width: 100%;
+}

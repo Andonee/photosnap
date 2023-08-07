@@ -1,4 +1,4 @@
-export const widthSM = 600;
-export const widthMD = 900;
-export const widthLG = 1200;
+export const widthSM = 375;
+export const widthMD = 767;
+export const widthLG = 1024;
 export const widthXL = 1536;

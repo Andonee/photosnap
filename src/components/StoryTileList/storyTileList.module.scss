@@ -1,0 +1,14 @@
+@use "src/styles/variables.scss" as v;
+
+.storyTileList {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media only screen and (min-width: v.$MD) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: v.$LG) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

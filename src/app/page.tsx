@@ -1,16 +1,28 @@
-"use client";
 import styles from "./page.module.css";
+import path from "path";
+import fs from "fs/promises";
 
-import { DesktopNav } from "@/components/Nav/DesktopNav";
-import { MobileNav } from "@/components/Nav/MobileNav";
-import { useViewWidth } from "@/common/hooks";
+import { StoryCardList } from "@/features/home/components";
+import { StoryTileList } from "@/components";
+import type { StoriesApiType } from "@/types/api";
+import { FeaturesList } from "@/features/home/components/Features";
 
-export default function Home() {
-  const { isMobile } = useViewWidth();
+export default async function Home() {
+  const data: StoriesApiType = await getData();
 
   return (
     <main className={styles.main}>
-      {isMobile ? <MobileNav /> : <DesktopNav />}
+      <StoryCardList stories={data.stories} />
+      <StoryTileList stories={data.story} />
+      <FeaturesList features={data.features} />
     </main>
   );
+}
+
+async function getData() {
+  const filePath = path.join(process.cwd(), "data", "content.json");
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData.toString());
+
+  return data;
 }

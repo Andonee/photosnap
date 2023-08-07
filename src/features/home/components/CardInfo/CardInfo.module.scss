@@ -1,0 +1,48 @@
+@use "src/styles/variables.scss" as v;
+
+.info {
+  grid-area: info;
+  padding: 72px 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 3.3px;
+    line-height: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.dark {
+  background-color: v.$black;
+
+  h2 {
+    color: v.$white;
+  }
+
+  p {
+    color: v.$lightGray;
+  }
+}
+
+.light {
+  background-color: v.$white;
+
+  h2 {
+    color: v.$black;
+  }
+  p {
+    color: v.$black;
+  }
+}

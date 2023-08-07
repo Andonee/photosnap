@@ -1,0 +1,40 @@
+@use "src/styles/variables.scss" as v;
+
+.card {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "info";
+
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+  &__image {
+    grid-area: image;
+  }
+}
+
+.card:nth-child(odd) {
+  @media only screen and (min-width: v.$MD) {
+    grid-template-rows: repeat(auto-fit, minmax(0, auto));
+    grid-template-areas: "info info image";
+  }
+}
+
+.card:nth-child(even) {
+  @media only screen and (min-width: v.$MD) {
+    grid-template-areas: "image info info";
+  }
+}
+
+.card:nth-child(odd) {
+  @media only screen and (min-width: v.$LG) {
+    grid-template-rows: repeat(auto-fit, minmax(0, auto));
+    grid-template-areas: "info info info info image image image image image";
+  }
+}
+
+.card:nth-child(even) {
+  @media only screen and (min-width: v.$LG) {
+    grid-template-areas: "image image image image image info info info info";
+  }
+}

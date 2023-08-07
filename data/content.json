@@ -1,0 +1,210 @@
+{
+  "stories": [
+    {
+      "isFeatured": false,
+      "title": "Create and share your photo stories.",
+      "date": "1688882469",
+      "author": "John Doe",
+      "info": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+      "url": "https://www.google.com",
+      "imageDesktop": "assets/home/desktop/create-and-share.jpg",
+      "imageTablet": "assets/home/tablet/create-and-share.jpg",
+      "imageMobile": "assets/home/mobile/create-and-share.jpg"
+    },
+    {
+      "isFeatured": false,
+      "title": "BEAUTIFUL STORIES EVERY TIME",
+      "date": "1686294069",
+      "author": "John Doe",
+      "info": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+      "url": "https://www.google.com",
+      "imageDesktop": "assets/home/desktop/beautiful-stories.jpg",
+      "imageTablet": "assets/home/tablet/beautiful-stories.jpg",
+      "imageMobile": "assets/home/mobile/beautiful-stories.jpg"
+    },
+    {
+      "isFeatured": false,
+      "title": "DESIGNED FOR EVERYONE",
+      "date": "1657350069",
+      "author": "John Doe",
+      "info": "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
+      "url": "https://www.google.com",
+      "imageDesktop": "assets/home/desktop/designed-for-everyone.jpg",
+      "imageTablet": "assets/home/tablet/designed-for-everyone.jpg",
+      "imageMobile": "assets/home/mobile/designed-for-everyone.jpg"
+    },
+    {
+      "isFeatured": true,
+      "title": "HAZY FULL MOON OF APPALACHIA",
+      "date": "1657350069",
+      "author": "John Doe",
+      "info": "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains', especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
+      "url": "https://www.google.com",
+      "imageDesktop": "assets/stories/desktop/moon-of-appalacia.jpg",
+      "imageTablet": "assets/stories/tablet/moon-of-appalacia.jpg",
+      "imageMobile": "assets/stories/mobile/moon-of-appalacia.jpg"
+    }
+  ],
+  "story": [
+    {
+      "title": "The Mountains",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/mountains.jpg",
+      "imageTablet": "assets/stories/desktop/mountains.jpg",
+      "imageMobile": "assets/stories/mobile/mountains.jpg"
+    },
+    {
+      "title": "Sunset Cityscapes",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/cityscapes.jpg",
+      "imageTablet": "assets/stories/desktop/cityscapes.jpg",
+      "imageMobile": "assets/stories/mobile/cityscapes.jpg"
+    },
+    {
+      "title": "18 Days Voyage",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/18-days-voyage.jpg",
+      "imageTablet": "assets/stories/desktop/18-days-voyage.jpg",
+      "imageMobile": "assets/stories/mobile/18-days-voyage.jpg"
+    },
+    {
+      "title": "Architecturals",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/architecturals.jpg",
+      "imageTablet": "assets/stories/desktop/architecturals.jpg",
+      "imageMobile": "assets/stories/mobile/architecturals.jpg"
+    },
+    {
+      "title": "World Tour 2019",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/world-tour.jpg",
+      "imageTablet": "assets/stories/desktop/world-tour.jpg",
+      "imageMobile": "assets/stories/mobile/world-tour.jpg"
+    },
+    {
+      "title": "Unforeseen Corners",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/unforeseen-corners.jpg",
+      "imageTablet": "assets/stories/desktop/unforeseen-corners.jpg",
+      "imageMobile": "assets/stories/mobile/unforeseen-corners.jpg"
+    },
+    {
+      "title": "King on Africa: Part II",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/king-on-africa.jpg",
+      "imageTablet": "assets/stories/desktop/king-on-africa.jpg",
+      "imageMobile": "assets/stories/mobile/king-on-africa.jpg"
+    },
+    {
+      "title": "The Trip to Nowhere",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/trip-to-nowhere.jpg",
+      "imageTablet": "assets/stories/desktop/trip-to-nowhere.jpg",
+      "imageMobile": "assets/stories/mobile/trip-to-nowhere.jpg"
+    },
+    {
+      "title": "Rage of The Sea",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/rage-of-the-sea.jpg",
+      "imageTablet": "assets/stories/desktop/rage-of-the-sea.jpg",
+      "imageMobile": "assets/stories/mobile/rage-of-the-sea.jpg"
+    },
+    {
+      "title": "Running Free",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/running-free.jpg",
+      "imageTablet": "assets/stories/desktop/running-free.jpg",
+      "imageMobile": "assets/stories/mobile/running-free.jpg"
+    },
+    {
+      "title": "Behind the Waves",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/behind-the-waves.jpg",
+      "imageTablet": "assets/stories/desktop/behind-the-waves.jpg",
+      "imageMobile": "assets/stories/mobile/behind-the-waves.jpg"
+    },
+    {
+      "title": "Calm Waters",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/calm-waters.jpg",
+      "imageTablet": "assets/stories/desktop/calm-waters.jpg",
+      "imageMobile": "assets/stories/mobile/calm-waters.jpg"
+    },
+    {
+      "title": "The Milky Way",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/milky-way.jpg",
+      "imageTablet": "assets/stories/desktop/milky-way.jpg",
+      "imageMobile": "assets/stories/mobile/milky-way.jpg"
+    },
+    {
+      "title": "Night at The Dark Forest",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/dark-forest.jpg",
+      "imageTablet": "assets/stories/desktop/dark-forest.jpg",
+      "imageMobile": "assets/stories/mobile/dark-forest.jpg"
+    },
+    {
+      "title": "Somwarpet’s Beauty",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/somwarpet.jpg",
+      "imageTablet": "assets/stories/desktop/somwarpet.jpg",
+      "imageMobile": "assets/stories/mobile/somwarpet.jpg"
+    },
+    {
+      "title": "Land of Dreams",
+      "author": "John Doe",
+      "date": "1686294069",
+      "imageDesktop": "assets/stories/desktop/land-of-dreams.jpg",
+      "imageTablet": "assets/stories/desktop/land-of-dreams.jpg",
+      "imageMobile": "assets/stories/mobile/land-of-dreams.jpg"
+    }
+  ],
+  "features": [
+    {
+      "title": "100% Responsive",
+      "info": "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+      "icon": "assets/features/desktop/responsive.svg"
+    },
+    {
+      "title": "No Photo Upload Limit",
+      "info": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+      "icon": "assets/features/desktop/no-limit.svg"
+    },
+    {
+      "title": "Available to Embed",
+      "info": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+      "icon": "assets/features/desktop/embed.svg"
+    },
+    {
+      "title": "Custom Domain",
+      "info": "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+      "icon": "assets/features/desktop/custom-domain.svg"
+    },
+    {
+      "title": "Boost Your Exposure",
+      "info": "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+      "icon": "assets/features/desktop/boost-exposure.svg"
+    },
+    {
+      "title": "Drag & Drop Image",
+      "info": "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+      "icon": "assets/features/desktop/drag-drop.svg"
+    }
+  ]
+}

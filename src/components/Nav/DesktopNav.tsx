@@ -19,7 +19,7 @@ export const DesktopNav = () => {
         <ul className={styles.navigation}>
           {paths.map((path) => {
             return (
-              <li>
+              <li key={path.path}>
                 <Link href={path.path}>{path.label}</Link>
               </li>
             );
