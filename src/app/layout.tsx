@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import { DM_Sans } from "next/font/google";
-import { Nav } from "@/components";
+import { Footer, Nav } from "@/components";
 
 const inter = DM_Sans({ weight: "400", subsets: ["latin"] });
 
@@ -19,6 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

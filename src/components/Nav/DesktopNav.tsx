@@ -10,12 +10,15 @@ export const DesktopNav = () => {
   return (
     <nav className={styles.wrapper}>
       <div className={styles.content}>
-        <Image
-          src={"/assets/shared/desktop/logo.svg"}
-          alt="photosnap"
-          width={170}
-          height={16}
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/assets/shared/desktop/logo.svg"}
+            alt="photosnap"
+            width={170}
+            height={16}
+          />
+        </Link>
+
         <ul className={styles.navigation}>
           {paths.map((path) => {
             return (

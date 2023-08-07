@@ -1,0 +1,58 @@
+@use "src/styles/variables.scss" as v;
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "socialmedia"
+    "links"
+    "invite"
+    "copyrights";
+  background-color: v.$black;
+  width: 100%;
+  padding: 56px 33px;
+  gap: 15px;
+
+  @media only screen and (min-width: v.$MD) {
+    grid-template-areas:
+      "socialmedia links"
+      "invite copyrights";
+  }
+}
+
+.socialmedia {
+  grid-area: socialmedia;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+
+  @media only screen and (min-width: v.$MD) {
+    flex-direction: row;
+  }
+
+  & a {
+    color: v.$white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.invite {
+  grid-area: invite;
+}
+
+.copyrights {
+  grid-area: copyrights;
+  color: v.$lightGray;
+  margin: auto;
+}
