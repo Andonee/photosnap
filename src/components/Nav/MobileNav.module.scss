@@ -6,17 +6,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 28px 24px;
   position: relative;
   height: 70px;
-  background-color: v.$white;
+  z-index: 3;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 28px 24px;
   width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: v.$white;
 
   & button {
     background-color: transparent;
@@ -38,7 +41,8 @@
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   transform: translateY(-200%);
-  z-index: -1000;
+  background-color: v.$white;
+  padding: 36px;
 
   & li {
     list-style: none;
@@ -69,5 +73,5 @@
 
 .open {
   transform: translateY(0);
-  z-index: 100;
+  z-index: 2;
 }
