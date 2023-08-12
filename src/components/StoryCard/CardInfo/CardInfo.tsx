@@ -25,9 +25,11 @@ export const CardInfo = (props: CardInfoProps) => {
         </span>
       )}
       <p>{info}</p>
-      <Link href={url}>
-        <ArrowButton label={urlLabel} type={theme} />
-      </Link>
+      {url && (
+        <Link href={url}>
+          <ArrowButton label={urlLabel} type={theme} />
+        </Link>
+      )}
     </article>
   );
 };

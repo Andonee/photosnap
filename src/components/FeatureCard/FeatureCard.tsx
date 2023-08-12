@@ -13,17 +13,22 @@ export const FeatureCard = (props: FeatureCardProps) => {
   return (
     <div className={styles.featureCard}>
       <div className={styles.featureCard__content}>
-        <Image
-          className={styles.featureCard__image}
-          src={`/${icon}`}
-          alt={title}
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: "fit-content", height: "auto" }}
-        />
-        <div>
-          <h2>{title}</h2>
+        <div className={styles.featureCard__image}>
+          <Image
+            src={`/${icon}`}
+            alt={title}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{
+              width: "fit-content",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        <div className={styles.featureCard__info}>
+          <h2 className={styles.featureCard__title}>{title}</h2>
           <p>{info}</p>
         </div>
       </div>

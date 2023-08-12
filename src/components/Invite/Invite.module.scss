@@ -1,0 +1,53 @@
+@use "src/styles/variables.scss" as v;
+
+.invite {
+  display: grid;
+  width: 100%;
+
+  & > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 /1;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: v.$white;
+    margin-bottom: 20px;
+    width: 85%;
+    margin: 0 auto;
+
+    & h2 {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+
+    & div {
+      padding: 16px 5px;
+      background-color: rgba(v.$lightGray, 0.25);
+    }
+  }
+
+  @media only screen and (min-width: v.$MD) {
+    aspect-ratio: 1 / 1.5;
+    height: 280px;
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  @media only screen and (min-width: v.$LG) {
+    aspect-ratio: 1 / 1.5;
+  }
+}
