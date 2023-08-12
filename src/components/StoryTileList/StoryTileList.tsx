@@ -14,7 +14,7 @@ export const StoryTileList = (props: StoryCardListProps) => {
   const getImage = useGetImage();
   return (
     <div className={styles.storyTileList}>
-      {stories.slice(0, 4).map((story) => {
+      {stories.map((story) => {
         const image = getImage(
           story.imageMobile,
           story.imageTablet,

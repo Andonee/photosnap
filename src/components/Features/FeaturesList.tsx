@@ -11,7 +11,7 @@ export const FeaturesList = (props: FeaturesListProps) => {
   const { features } = props;
   return (
     <div className={styles.featureList}>
-      {features.slice(0, 3).map((feature) => (
+      {features.map((feature) => (
         <FeatureCard
           icon={feature.icon}
           title={feature.title}

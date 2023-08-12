@@ -4,16 +4,14 @@ import fs from "fs/promises";
 import { StoryCardList } from "@/features/home/components";
 import { StoryTileList } from "@/components";
 import type { StoriesApiType } from "@/types/api";
-import { FeaturesList } from "@/components/Features";
 
 export default async function Home() {
   const data: StoriesApiType = await getData();
 
   return (
     <main>
-      <StoryCardList stories={data.stories} />
-      <StoryTileList stories={data.story.slice(0, 4)} />
-      <FeaturesList features={data.features.slice(0, 3)} />
+      <StoryCardList stories={[data.stories[3]]} />
+      <StoryTileList stories={data.story} />
     </main>
   );
 }

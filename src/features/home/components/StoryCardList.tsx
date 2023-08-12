@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StoryCard } from "./StoryCard";
+import { StoryCard } from "../../../components/StoryCard";
 import type { StoriesType } from "@/types/api";
 import { useGetImage } from "@/common/hooks";
 import { convertDate } from "@/common/utils";

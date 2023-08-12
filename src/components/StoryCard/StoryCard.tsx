@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CardInfo } from "../CardInfo";
+import { CardInfo } from "./CardInfo";
 import type { StoriesType } from "@/types/api";
 
 import styles from "./StoryCard.module.scss";

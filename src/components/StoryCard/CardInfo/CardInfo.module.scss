@@ -31,7 +31,8 @@
     color: v.$white;
   }
 
-  p {
+  p,
+  time {
     color: v.$lightGray;
   }
 }
@@ -42,7 +43,8 @@
   h2 {
     color: v.$black;
   }
-  p {
+  p,
+  time {
     color: v.$black;
   }
 }
