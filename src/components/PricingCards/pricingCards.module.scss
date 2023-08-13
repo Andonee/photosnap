@@ -1,0 +1,15 @@
+@use "src/styles/variables.scss" as v;
+
+.pricingCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 24px auto;
+  gap: 24px;
+  width: 90%;
+
+  @media only screen and (min-width: v.$LG) {
+    flex-direction: row;
+    margin: 48px auto;
+  }
+}

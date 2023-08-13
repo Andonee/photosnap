@@ -1,0 +1,68 @@
+@use "src/styles/variables.scss" as v;
+
+.pricingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 40px;
+  width: 100%;
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & span:first-child {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}
+
+.dark {
+  background-color: v.$black;
+  & h2 {
+    transform: scale(1.2);
+    color: v.$white;
+  }
+
+  & .pricingCard__info {
+    color: v.$white;
+    opacity: 0.6;
+  }
+
+  & .pricingCard__price {
+    & span:nth-child(1) {
+      color: v.$white;
+    }
+    & span:nth-child(2) {
+      color: v.$white;
+      opacity: 0.6;
+    }
+  }
+}
+
+.light {
+  background-color: v.$lightGray;
+  & h2 {
+    color: v.$black;
+  }
+
+  & .pricingCard__info {
+    color: v.$black;
+    opacity: 0.6;
+  }
+
+  & .pricingCard__price {
+    & span:nth-child(1) {
+      color: v.$black;
+    }
+    & span:nth-child(2) {
+      color: v.$black;
+      opacity: 0.6;
+    }
+  }
+}

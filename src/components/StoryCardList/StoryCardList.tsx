@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import { StoryCard } from "../../../components/StoryCard";
+
 import type { StoriesType } from "@/types/api";
 import { useGetImage } from "@/common/hooks";
 import { convertDate } from "@/common/utils";
+import { StoryCard } from "../StoryCard";
 
 type StoryCardListProps = {
   stories: Array<StoriesType>;
@@ -14,7 +15,7 @@ export const StoryCardList = (props: StoryCardListProps) => {
   const getImage = useGetImage();
 
   return (
-    <div>
+    <>
       {stories.slice(0, 3).map((story, idx) => {
         const urlLabel = idx === 0 ? "GET AN INVITE" : "VIEW THE STORIES";
         const theme = idx === 0 ? "dark" : "light";
@@ -38,6 +39,6 @@ export const StoryCardList = (props: StoryCardListProps) => {
           />
         );
       })}
-    </div>
+    </>
   );
 };

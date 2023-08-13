@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 
-import { StoryCardList } from "@/features/home/components";
+import { StoryCardList } from "@/components/StoryCardList";
 import { FeaturesList } from "@/components/Features";
 import type { StoriesApiType } from "@/types/api";
 import { Invite } from "@/components/Invite";
