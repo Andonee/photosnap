@@ -1,0 +1,17 @@
+name: Development
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build
+        run: |
+          docker build . -t mpoprawa/photosnap
+      - name: publish
+        run: |
+          docker push mpoprawa/photosnap
