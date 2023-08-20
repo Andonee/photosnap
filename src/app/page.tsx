@@ -11,6 +11,7 @@ export default async function Home() {
 
   return (
     <main>
+      <div>Github actions test</div>
       <StoryCardList stories={data.stories} />
       <StoryTileList stories={data.story.slice(0, 4)} />
       <FeaturesList features={data.features.slice(0, 3)} />

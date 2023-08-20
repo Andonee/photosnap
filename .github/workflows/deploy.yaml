@@ -16,3 +16,18 @@ jobs:
         run: |
           docker login -u mpoprawa -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push mpoprawa/photosnap
+  deploy:
+    needs: publish
+    runs-on: ubuntu-22.04
+    steps:
+      - name: executing remote ssh commands
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            cd /var/www/photosnap2
+            docker pull mpoprawa/photosnap
+            docker-compose down
+            docker-compose up -d
