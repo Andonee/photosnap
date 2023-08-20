@@ -27,8 +27,8 @@ const cards: Array<PricingCardProps> = [
 export const PricingCards = () => {
   return (
     <div className={styles.pricingCards}>
-      {cards.map((card) => (
-        <PricingCard {...card} />
+      {cards.map((card, idx) => (
+        <PricingCard {...card} key={`${card.info}_${idx}`} />
       ))}
     </div>
   );

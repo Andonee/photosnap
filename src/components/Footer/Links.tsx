@@ -24,8 +24,10 @@ const links = [
 const Links = () => {
   return (
     <div className={styles.links}>
-      {links.map((link) => (
-        <Link href={link.url}>{link.label}</Link>
+      {links.map((link, idx) => (
+        <Link href={link.url} key={`${link.label}_${idx}`}>
+          {link.label}
+        </Link>
       ))}
     </div>
   );

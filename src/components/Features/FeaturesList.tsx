@@ -11,11 +11,12 @@ export const FeaturesList = (props: FeaturesListProps) => {
   const { features } = props;
   return (
     <div className={styles.featureList}>
-      {features.map((feature) => (
+      {features.map((feature, idx) => (
         <FeatureCard
           icon={feature.icon}
           title={feature.title}
           info={feature.info}
+          key={`${feature.title}_${idx}`}
         />
       ))}
     </div>

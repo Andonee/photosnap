@@ -1,4 +1,4 @@
-export default [
+const paths = [
   {
     label: "stories",
     path: "/stories",
@@ -13,3 +13,5 @@ export default [
     path: "/pricing",
   },
 ];
+
+export default paths;

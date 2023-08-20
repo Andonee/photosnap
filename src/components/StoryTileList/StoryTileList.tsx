@@ -14,14 +14,19 @@ export const StoryTileList = (props: StoryCardListProps) => {
   const getImage = useGetImage();
   return (
     <div className={styles.storyTileList}>
-      {stories.map((story) => {
+      {stories.map((story, idx) => {
         const image = getImage(
           story.imageMobile,
           story.imageTablet,
           story.imageDesktop
         );
         return (
-          <StoryTile image={image} title={story.title} author={story.author} />
+          <StoryTile
+            image={image}
+            title={story.title}
+            author={story.author}
+            key={`${story.title}_${idx}`}
+          />
         );
       })}
     </div>
